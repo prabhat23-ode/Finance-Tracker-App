@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="h-screen w-screen">
+    <div id="page" class="h-full w-full bg-gray-600 flex">
+        <nav class="h-full w-1/4 min-w-56 pl-4">
+            <div id="profile-card" class="h-45 w-full flex flex-col items-center justify-center">
+                <div id="profile-picture" class="border h-28 w-28 rounded-[50%]"></div>
+                <div id="profile-name" class="pt-0.5 pr-1 pb-0.5 pl-1">
+                    <p class="text-black">Prabhat Lohara</p>
+                </div>
+            </div>
+            <ul id="navigation-menu" class="list-none">
+                <li id="home"
+                    class="h-10 w-full flex items-center pl-2 pr-2 pt-0.5 pb-0.5 mt-2 hover:bg-gray-500 cursor-pointer border-0 rounded-[10px] ease-in-out duration-200">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="ml-2">Home</p>
+                </li>
+                <li id="trips"
+                    class="h-10 w-full flex items-center pl-2 pr-2 pt-0.5 pb-0.5 mt-2 hover:bg-gray-500 cursor-pointer border-0 rounded-[10px] ease-in-out duration-200">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <p class="ml-2">Incomes</p>
+                </li>
+                <li id="expences"
+                    class="h-10 w-full flex items-center pl-2 pr-2 pt-0.5 pb-0.5 mt-2 hover:bg-gray-500 cursor-pointer border-0 rounded-[10px] ease-in-out duration-200">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <p class="ml-2">Expences</p>
+                </li>
+                <li id="support"
+                    class="h-10 w-full flex items-center pl-2 pr-2 pt-0.5 pb-0.5 mt-2 hover:bg-gray-500 cursor-pointer border-0 rounded-[10px] ease-in-out duration-200">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="ml-2">Support</p>
+                </li>
+            </ul>
+        </nav>
+        <div id="main-container" class=" w-3/4 h-full p-5">
+            <div id="main"
+                class="bg-black h-full w-full border-0 rounded-2xl grid grid-rows-[10%_32%_20%_32%] gap-y-4 pb-4">
+                <div id="box-0" class="border">
+                </div>
+                <div id="box-1" class="border grid grid-cols-[40%_58%] gap-x-4 pl-4 pr-4">
+                    <div id="add-transaction" class="border border-gray-600 rounded-[10px]">
+                        <p class="text-gray-500 text-[0.9rem] ml-3">Pending Transaction</p>
+                        <hr class="text-gray-500">
+                        <ul div="tasks">
+                        </ul>
+                    </div>
+                    <div id="recent-transactions" class="border  border-gray-600 rounded-[10px]">
+                        <p class="text-gray-500 text-[0.9rem] ml-3">Recent Transactions</p>
+                        <hr class="text-gray-500">
+                    </div>
+                </div>
+                <div id="box-2" class="border pl-4 pr-4">
+                    <div id="quick-access" class="border border-gray-600 h-full w-full rounded-[10px]">
+                        <p class="text-gray-500 text-[0.9rem] ml-3">Quick Access</p>
+                        <hr class="text-gray-500">
+                    </div>
+                </div>
+                <div id="box-3" class="border pl-4 pr-4">
+                    <div id="report" class="border border-gray-600 h-full w-full rounded-[10px]">
+                        <p class="text-gray-500 text-[0.9rem] ml-3">Report</p>
+                        <hr class="text-gray-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
